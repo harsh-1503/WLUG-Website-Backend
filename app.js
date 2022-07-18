@@ -1,9 +1,10 @@
 const express = require("express");
-
+const cors = require("cors");
 // upload();
 const globalErrorHandler = require("./controllers/errorCotroller");
 
 const app = express();
+app.use(cors());
 
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: true }));
