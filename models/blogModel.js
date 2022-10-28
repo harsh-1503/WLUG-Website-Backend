@@ -19,14 +19,14 @@ const blogSchema = new mongoose.Schema({
   },
   createdBy: {
     type: [String],
-    required: [true, "Please add a name"],
-  },
-  githubofAuthor: {
-    type: String,
-    required: [true, "Please add a github link"],
+    // required: ["Please add a name"],
   },
   redirectLink: {
     type: String,
+    required: [true],
+  },
+  tags: {
+    type: [String],
     required: [true],
   },
 });
