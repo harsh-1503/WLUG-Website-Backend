@@ -17,6 +17,7 @@ const blogSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  image: { type: String },
   createdBy: {
     type: [String],
     // required: ["Please add a name"],
