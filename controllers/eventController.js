@@ -10,7 +10,7 @@ exports.insertEvent = catchAsync(async (req, res, next) => {
   event.save();
   res.status(201).json({
     status: "success",
-    data: {
+    theBoys: {
       event,
     },
   });
@@ -20,7 +20,7 @@ exports.getAllEvents = catchAsync(async (req, res, next) => {
   const event = await Event.find();
   res.status(201).json({
     status: "success",
-    data: {
+    theBoys: {
       event,
     },
   });

@@ -17,7 +17,7 @@ exports.insertCS = catchAsync(async (req, res, next) => {
   clubService.save();
   res.status(201).json({
     status: "success",
-    data: {
+    theBoys: {
       clubService,
     },
   });
@@ -27,7 +27,7 @@ exports.getAllCS = catchAsync(async (req, res, next) => {
   const clubService = await ClubService.find();
   res.status(201).json({
     status: "success",
-    data: {
+    theBoys: {
       clubService,
     },
   });
