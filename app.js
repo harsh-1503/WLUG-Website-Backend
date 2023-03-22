@@ -20,7 +20,7 @@ app.use("/api/v1/events", eventRouter);
 app.use("/api/v1/getAll", getAllUsers);
 
 app.use("/ping", (req, res, next) => {
-  res.send("Helo World !");
+  res.send("Helo  !");
 });
 
 app.use(globalErrorHandler);
