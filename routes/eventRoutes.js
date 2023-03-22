@@ -7,10 +7,6 @@ const router = express.Router();
 router
   .route("/")
   .get(eventController.getAllEvents)
-  .post(
-    authController.protect,
-    authController.restrictTo("developer"),
-    eventController.insertEvent
-  );
+  .post(eventController.insertEvent);
 
 module.exports = router;
