@@ -9,7 +9,7 @@ const DB =
 
 mongoose
   .connect(
-    "mongodb+srv://WlugAdmin:admin123@cluster0.dc3xy30.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://Ayush:Ayush16@cluster0.bszrfxc.mongodb.net/?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
