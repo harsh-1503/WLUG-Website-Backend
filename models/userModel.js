@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
   },
   username: {
     type: String,
-    required: [true, "Please tell us your username!"],
+    // required: [true, "Please tell us your username!"],
     unique: true,
   },
   email: {
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: [true, "Please provide a password"],
+    // required: [true, "Please provide a password"],
     minlength: 8,
     select: false,
   },
@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema({
   },
   contact: {
     type: String,
-    required: [true, "Please Provide your Contact Number"],
+    // required: [true, "Please Provide your Contact Number"],
   },
   quote: {
     type: String,
