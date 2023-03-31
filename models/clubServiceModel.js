@@ -7,7 +7,7 @@ const clubServiceSchema = new mongoose.Schema({
   },
 
   presenterName: {
-    type: String,
+    type: [String],
     required: [true, "Please add Presenter's Name"],
   },
 
