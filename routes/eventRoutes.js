@@ -9,4 +9,6 @@ router
   .get(eventController.getAllEvents)
   .post(eventController.insertEvent);
 
+router.route("/getSingle").post(eventController.getSingleEvent);
+
 module.exports = router;
