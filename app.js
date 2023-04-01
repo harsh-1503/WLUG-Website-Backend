@@ -18,6 +18,7 @@ app.use("/api/v1/users", userRouter);
 app.use("/api/v1/blogs", blogRouter);
 app.use("/api/v1/events", eventRouter);
 app.use("/api/v1/getAll", getAllUsers);
+app.use("/api/v1/clubservices", csRouter);
 
 app.use("/ping", (req, res, next) => {
   res.send("Helo  !");
