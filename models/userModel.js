@@ -31,8 +31,8 @@ const userSchema = new mongoose.Schema({
     minlength: 8,
     select: false,
   },
-  board: {
-    type: String,
+  boardOf: {
+    type: Number,
   },
   contact: {
     type: String,
@@ -54,6 +54,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true],
   },
+  priority:{
+    type:Number
+  }
 });
 
 userSchema.pre("save", async function (next) {

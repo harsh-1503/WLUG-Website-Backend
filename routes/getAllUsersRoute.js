@@ -5,6 +5,8 @@ const usersss = require("../controllers/userController");
 
 const router = express.Router();
 
-router.route("/").get(usersss.getAllUsers);
+router.route("/").post(usersss.getAllUsers);
+
+router.route("/getSpecific").post(usersss.getSpecificYear);
 
 module.exports = router;
